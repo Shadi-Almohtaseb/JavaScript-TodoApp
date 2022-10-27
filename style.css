@@ -1,0 +1,201 @@
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 18px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    207deg,
+    rgba(63, 94, 251, 1) 35%,
+    rgba(252, 70, 107, 1) 100%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    207deg,
+    rgba(63, 94, 251, 1) 35%,
+    rgba(252, 70, 107, 1) 100%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fafafa;
+  box-shadow: 6px 6px 20px 4px rgb(0 0 0 / 16%);
+  width: 70%;
+  height: 90%;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+h1 {
+  margin: 12px 0;
+}
+.add-elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin: 15px 30px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, rgb(25, 25, 247), rgb(228, 113, 213)) border-box;
+  border-radius: 15px;
+  border: 3.19px solid transparent;
+  box-shadow: 2px 5px 20px 0px rgb(0 0 0 / 16%);
+}
+
+.toDoInput {
+  padding: 6px 4px;
+  width: 70%;
+  border: none;
+}
+.btn {
+  padding: 7px 14px;
+  background-color: #00b0ff;
+  border: none;
+  border-radius: 7px;
+  color: #fafafa;
+  margin: 6px 0;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.trashBTN {
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px;
+  border: none;
+  transition: 0.4s ease;
+  font-size: 1.1rem;
+}
+.trashBTN:hover {
+  background-color: rgba(144, 140, 140, 0.438);
+}
+.li_Text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.element-list {
+  height: 550px;
+  /* overflow-y: scroll; */
+}
+.checkboxStyle {
+  width: 16px;
+  height: 16px;
+}
+.dateInput {
+  padding: 4px;
+  margin-right: 20px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to right, rgb(25, 25, 247), rgb(228, 113, 213)) border-box;
+  border-radius: 15px;
+  border: 3.19px solid transparent;
+  box-shadow: 1px 5px 20px 0px rgb(0 0 0 / 16%);
+}
+ul {
+  padding: 15px;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  padding: 10px 19px;
+  background-color: #fff;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #1565c0;
+}
+
+li:hover {
+  background-color: #e0e0e054;
+}
+
+.checked {
+  text-decoration: line-through;
+  background-color: #e0e0e0a1;
+  padding: 9px 30px;
+  border-radius: 12px;
+}
+.textTdo {
+  padding: 9px 30px;
+}
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: linear-gradient(to right, rgb(25, 25, 247), rgb(228, 113, 213))
+    border-box;
+  color: #fff;
+  width: 80%;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Delete_All {
+  padding: 7px 14px;
+  background-color: #ff0062;
+  border: none;
+  border-radius: 7px;
+  color: #fafafa;
+  margin: 6px 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.Delete_All:hover {
+  background-color: #ff0000;
+}
+
+@media only screen and (max-width: 720px) {
+  .li_Text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+  li {
+    flex-direction: column;
+  }
+  .container {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  li {
+    flex-direction: column;
+  }
+  .container {
+    width: 95%;
+  }
+}

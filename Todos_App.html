@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadTasks()">
+    <div>
+      <div class="container">
+        <h1>Todo App</h1>
+
+        <div class="add-elements">
+          <input
+            class="toDoInput"
+            id="add"
+            type="text"
+            placeholder="what do you want to do?"
+          />
+          <input id="EdDate" type="date" class="dateInput"></input>
+
+          <button class="btn" id="btn" onclick="AddNewTask()">Add</button>
+        </div>
+
+        <div class="element-list">
+          <ul id="list">
+            <!-- <li>
+              <div class="li_Text">
+                <input type="checkbox" class="checkboxStyle" />
+                <span class="checked textTdo">buy some milk buy some milk buy some milk</span>
+            </div>
+              <span class="checked">ED: 10/10/2022</span>
+              <button class="trashBTN">🗑️</button>
+            </li>
+            <li>
+              <div class="li_Text">
+                <input type="checkbox" class="checkboxStyle" />
+                <span class="textTdo">buy some food</span>
+            </div>
+            <span class="">ED: 10/10/2022</span>
+              <button class="trashBTN">🗑️</button>
+            </li>
+            <li>
+              <div class="li_Text">
+                <input type="checkbox" class="checkboxStyle" />
+                <span class="textTdo">buy some jose</span>
+            </div>
+              <span class="">ED: 10/10/2022</span>
+              <button class="trashBTN">🗑️</button>
+            </li> -->
+          </ul>
+        <div id="number" class="number"></div>
+        <div id="Delete_All"></div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
